@@ -1,0 +1,1 @@
+create table biz ( bizid, latitude, longitude, phone, category, state, city, name ) ;

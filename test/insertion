@@ -1,0 +1,6 @@
+insert into tname values (1, 2, 3);
+insert into tname values ('a', 'b', 'c');
+insert into tname values (1, 'b', 3);
+insert into friends values( 'LALA', 25, 'm');
+
+

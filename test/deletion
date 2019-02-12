@@ -1,0 +1,2 @@
+delete from movies where year  = 1994;
+

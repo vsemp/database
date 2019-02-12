@@ -1,0 +1,1 @@
+select title, year, rating from movies, movies_ratings order by rating ;

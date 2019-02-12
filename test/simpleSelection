@@ -1,0 +1,1 @@
+select name, age, gender from friends where age = 22;

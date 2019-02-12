@@ -1,0 +1,1 @@
+select name, age from friends where (22 = age) and (name = 'LALA') and (age = 25 ) ;

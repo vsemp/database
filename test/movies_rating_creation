@@ -1,0 +1,1 @@
+create table movie_ratings ( id, rating ) ;

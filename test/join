@@ -1,0 +1,3 @@
+select id, title, year, rating 
+from movies , movies_ratings 
+where year = 1994;

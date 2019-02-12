@@ -1,0 +1,1 @@
+update friends set age = 0 where name = 'DAVID';

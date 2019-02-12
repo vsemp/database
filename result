@@ -1,0 +1,31 @@
+Btree.cpp: In member function ‘virtual BTreeNode* InternalNode::find(Tuple)’:
+Btree.cpp:241:24: error: request for member ‘find’ in ‘*(((InternalNode*)this)->InternalNode::children + ((sizetype)(((long unsigned int)pos) * 8ul)))’, which is of pointer type ‘BTreeNode*’ (maybe you meant to use ‘->’ ?)
+   return children[pos].find( value );
+                        ^
+Btree.cpp: In member function ‘void LeafNode::addToThis(Tuple)’:
+Btree.cpp:338:38: error: no matching function for call to ‘Tuple::insert(std::vector<int>&)’
+       values[i].insert( value.offset );
+                                      ^
+Btree.cpp:338:38: note: candidate is:
+In file included from Btree.h:4:0,
+                 from Btree.cpp:3:
+Tuple.h:26:7: note: void Tuple::insert(int)
+  void insert( int _offset );
+       ^
+Tuple.h:26:7: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘int’
+Btree.cpp: In member function ‘virtual BTreeNode* LeafNode::find(Tuple)’:
+Btree.cpp:416:9: error: ‘keys’ was not declared in this scope
+     if( keys[i] == values )
+         ^
+Btree.cpp:418:15: error: lvalue required as unary ‘&’ operand
+       return &this;
+               ^
+Btree.cpp: In member function ‘virtual BTreeNode* InternalNode::find(Tuple)’:
+Btree.cpp:242:1: warning: control reaches end of non-void function [-Wreturn-type]
+ } // return null if not found
+ ^
+Btree.cpp: In member function ‘virtual BTreeNode* LeafNode::find(Tuple)’:
+Btree.cpp:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Btree.o] Error 1

@@ -1,0 +1,3 @@
+select name, age from friends where 
+( (21 = age) and (gender = 'f') )
+or (gender = 'm');
